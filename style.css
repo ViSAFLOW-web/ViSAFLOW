@@ -25,7 +25,7 @@ body {
   }
 
   .long-video {
-    width: 66%;      /* adjust as you like */
+    width: 30%;      /* adjust as you like */
     height: auto;
     display: block;
     margin: 0 auto;  /* keep it centered */
@@ -43,4 +43,28 @@ body {
     text-align: center;
     font-weight: bold;
     margin-top: 8px;
+  }
+
+  .four-video-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;        /* narrower gap so everything fits */
+    flex-wrap: nowrap;  /* keep all four on one line */
+  }
+  
+  .four-video-row .video-col {
+    flex: 0 0 23%;      /* 4 × 23 %  + gaps  ≈ 100 % */
+  }
+  
+  /* bottom labels for the two halves */
+  .caption-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  
+  .row-caption-half {
+    width: 48%;         /* first caption spans first two vids, second spans last two */
+    text-align: center;
+    font-weight: bold;
   }
