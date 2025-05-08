@@ -23,4 +23,24 @@ body {
     font-weight: bold;
     margin-top: 8px;
   }
+
+  .long-video {
+    width: 66%;      /* adjust as you like */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* keep it centered */
+  }
   
+  .top-caption {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .row-caption-half {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+  }
