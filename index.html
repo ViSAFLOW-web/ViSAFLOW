@@ -158,9 +158,14 @@
     <div class="row-caption">PickEggplant</div>
   </div>
 
+  <video class="long-video" controls>
+    <source src="media/long_horizon.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
   <div class="section">
     <h2>Real-world Long Horizon (1x Speed)</h2>
-    <video controls>
+    <video class="long-video" controls>
       <source src="media/long_horizon.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -168,6 +173,54 @@
       MoveContainer → PickEggplant
     </div>
   </div>
+
+  <!-- ---------- Real‑world flow representation comparison ---------- -->
+<div class="section">
+  <h2>Real-world Flow Representation Comparison</h2>
+
+  <div class="video-row">
+
+    <!-- Decoded ẑt (MoveContainer) -->
+    <div class="video-col">
+      <div class="top-caption">Decoded <i>ẑ<sub>t</sub></i></div>
+      <video controls>
+        <source src="media/predicted_sequence_yellow_box_converted.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Ground‑truth zt (MoveContainer) -->
+    <div class="video-col">
+      <div class="top-caption">Ground-truth <i>z<sub>t</sub></i></div>
+      <video controls>
+        <source src="media/ground_truth_yellow_box_converted.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Decoded ẑt (PickEggplant) -->
+    <div class="video-col">
+      <div class="top-caption">Decoded <i>ẑ<sub>t</sub></i></div>
+      <video controls>
+        <source src="media/predicted_sequence_eggplant_converted.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Ground‑truth zt (PickEggplant) -->
+    <div class="video-col">
+      <div class="top-caption">Ground-truth <i>z<sub>t</sub></i></div>
+      <video controls>
+        <source src="media/ground_truth_sequence_eggplant_converted.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <!-- bottom captions spanning two columns each -->
+  <div class="row-caption-half">MoveContainer</div>
+  <div class="row-caption-half">PickEggplant</div>
+</div>
 
 </body>
 </html>
